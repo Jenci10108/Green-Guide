@@ -6,7 +6,7 @@ require("dotenv").config();
 const plantCareDatabase = require("./plantCareDatabase");
 const db = require("./db");
 const app = express();
-
+app.use(express.static("public"));
 app.use(cors());
 
 const upload = multer({
