@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plant Result - Green Guide</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🌱 Green Guide
+        </div>
+
+        <select id="languageSelect">
+            <option value="en">English</option>
+            <option value="hi">हिंदी</option>
+            <option value="gu">ગુજરાતી</option>
+        </select>
+
+    </header>
+
+
+    <main class="result-container">
+
+        <h1 id="resultTitle">
+            🌱 Plant Information
+        </h1>
+
+
+        <!-- Uploaded Image -->
+
+        <div class="result-image-container">
+
+           <img id="resultImage"
+     alt="Uploaded Plant">
+
+        </div>
+
+
+        <!-- Plant Name -->
+
+       <section class="plant-heading">
+    <h2 id="plantName"></h2>
+    <p id="scientificName"></p>
+    <p id="confidenceInfo"></p>
+
+    <p id="habitatInfo"></p>
+    <p id="lifeFormInfo"></p>
+</section>
+
+
+        <!-- Plant Information -->
+
+        <section class="plant-info">
+
+            <div class="info-card">
+                <span>🌍</span>
+                <h3 id="nativeTitle">Native / Typical Regions</h3>
+                <p id="nativeInfo"></p>
+            </div>
+          
+            <div class="info-card">
+    <span>📍</span>
+    <h3 id="distributionTitle">Reported Distribution</h3>
+    <p id="distributionInfo">Information unavailable.</p>
+</div>
+
+
+            <div class="info-card">
+                <span>☀️</span>
+                <h3 id="lightTitle">Light Requirement</h3>
+               <p id="lightInfo"></p>
+            </div>
+
+
+            <div class="info-card">
+                <span>💧</span>
+                <h3 id="waterTitle">Water Requirement</h3>
+                <p id="waterInfo">
+                   
+                </p>
+            </div>
+
+
+            <div class="info-card">
+                <span>🌡️</span>
+                <h3 id="temperatureTitle">Temperature / Climate</h3>
+                <p id="temperatureInfo">
+                    
+                </p>
+            </div>
+
+
+            <div class="info-card">
+                <span>🌱</span>
+                <h3 id="soilTitle">Soil Type</h3>
+                <p id="soilInfo">
+                    
+                </p>
+            </div>
+
+
+            <div class="info-card">
+                <span>📏</span>
+                <h3 id="growthTitle">Expected Growth</h3>
+                <p id="growthInfo">
+                    
+                </p>
+            </div>
+
+
+            <div class="info-card">
+                <span>🌳</span>
+                <h3 id="seasonTitle">Best Planting Season</h3>
+                <p id="seasonInfo">
+                   
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Care Guide -->
+
+        <section class="care-section">
+
+            <h2 id="careTitle">
+                🌿 How to Grow & Care
+            </h2>
+
+            <ol id="careList">
+
+               
+
+            </ol>
+
+        </section>
+
+
+        <!-- Visual Health -->
+
+        <section class="health-section">
+
+            <h2 id="healthTitle">
+                📷 Visual Health Assessment
+            </h2>
+
+            <div class="health-box">
+
+                <div class="health-status">
+    🟢 <strong id="healthStatus">Basic visual check</strong>
+</div>
+
+<p id="healthDescription">
+    The uploaded plant image has been visually reviewed.
+    This is an informational check and not a professional diagnosis.
+</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Identify Plant - Green Guide</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            🌱 Green Guide
+        </div>
+
+        <select id="languageSelect">
+            <option value="en">English</option>
+            <option value="hi">हिंदी</option>
+            <option value="gu">ગુજરાતી</option>
+        </select>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <h1 id="uploadTitle">
+                Identify Your Plant 🌱
+            </h1>
+
+            <p id="uploadDescription">
+                Upload a clear photo of your plant or tree.
+            </p>
+
+
+            <div class="upload-box">
+
+                <div class="upload-icon">
+                    📷
+                </div>
+
+                <input
+                    type="file"
+                    id="plantImage"
+                    accept="image/*"
+                >
+                <img id="imagePreview" src="" alt="Plant Preview">
+
+                <p>
+                    Choose a plant image from your device
+                </p>
+<label for="plantSelect">
+    Select plant for testing:
+</label>
+
+<select id="plantSelect">
+
+    <option value="mango">🥭 Mango</option>
+    <option value="neem">🌿 Neem</option>
+    <option value="rose">🌹 Rose</option>
+    <option value="lemon">🍋 Lemon</option>
+    <option value="aloe">🌵 Aloe Vera</option>
+
+</select>
+                <button id="analyzeButton">
+                    🔍 Analyze Plant
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8f2;
+    color: #1f3d2b;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#languageSelect {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #53665a;
+}
+
+#startButton {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #2e7d4f;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#startButton:hover {
+    background: #245f3c;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 8% 80px;
+}
+
+.feature-card {
+    background: white;
+    width: 280px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card div {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-card h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.feature-card p {
+    color: #66736a;
+    line-height: 1.5;
+}
+
+.upload-box {
+    background: white;
+    width: 500px;
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.upload-icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+#plantImage {
+    margin: 15px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+#analyzeButton {
+    margin-top: 20px;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #2e7d4f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#analyzeButton:hover {
+    background: #245f3c;
+}
+#imagePreview {
+    display: none;
+    width: 280px;
+    max-width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 12px;
+    border: 2px solid #2e7d4f;
+}
+
+/* RESULT PAGE */
+
+.result-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.result-container > h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.result-image-container {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#resultImage {
+    width: 320px;
+    height: 320px;
+    max-width: 90%;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 3px solid #2e7d4f;
+}
+
+.plant-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.plant-heading h2 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+.plant-heading #scientificName {
+    font-size: 20px;
+    color: #4f5d52;
+    margin-bottom: 12px;
+}
+.plant-heading #confidenceInfo {
+    font-size: 16px;
+    font-style: normal;
+    color: #5f6f63;
+    margin-bottom: 14px;
+}
+.plant-heading p {
+    font-size: 18px;
+    font-style: italic;
+    color: #66736a;
+}
+
+.plant-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.info-card span {
+    font-size: 30px;
+}
+
+.info-card h3 {
+    margin: 12px 0 8px;
+}
+
+.info-card p {
+    color: #5f6d63;
+    line-height: 1.5;
+}
+
+.care-section,
+.health-section {
+    background: white;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.care-section h2,
+.health-section h2 {
+    margin-bottom: 20px;
+}
+
+.care-section li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.health-box {
+    padding: 20px;
+    border-radius: 12px;
+    background: #f4f8f2;
+}
+
+.health-status {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.health-box p {
+    color: #5f6d63;
+    line-height: 1.6;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .plant-info {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+#plantSelect {
+    display: block;
+    width: 80%;
+    max-width: 350px;
+    margin: 15px auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+}
+
+.upload-box label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
