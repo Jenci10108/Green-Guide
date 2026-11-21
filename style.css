@@ -34,41 +34,49 @@ header {
 
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 110px 20px 80px;
     max-width: 850px;
     margin: auto;
 }
-
 .hero h1 {
-    font-size: 45px;
+    font-size: 48px;
+    color: #244b35;
+    font-weight: 700;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
-
 .hero p {
     font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #53665a;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    color: #66736a;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 #startButton {
-    padding: 14px 25px;
+    padding: 15px 30px;
     border: none;
     border-radius: 10px;
     background: #2e7d4f;
     color: white;
     font-size: 17px;
+    font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #startButton:hover {
     background: #245f3c;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .features {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
+flex-wrap: wrap;
     padding: 40px 8% 80px;
 }
 
@@ -77,41 +85,68 @@ header {
     width: 280px;
     padding: 30px;
     text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+    border: 1px solid #e5eee7;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
 }
 
 .feature-card div {
-    font-size: 40px;
-    margin-bottom: 15px;
+    font-size: 45px;
+    margin-bottom: 18px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover div {
+    transform: scale(1.12);
 }
 
 .feature-card h2 {
-    margin-bottom: 10px;
-    font-size: 20px;
+    margin-bottom: 12px;
+    font-size: 21px;
+    color: #244b35;
+    font-weight: 600;
 }
 
 .feature-card p {
     color: #66736a;
-    line-height: 1.5;
+    line-height: 1.7;
+    font-size: 15px;
 }
-
 .upload-box {
     background: white;
     width: 500px;
     max-width: 90%;
     margin: 30px auto;
-    padding: 40px;
-    border-radius: 15px;
+    padding: 35px 30px;
+    border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #e5eee7;
+}
+.upload-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
 }
 
 .upload-icon {
     font-size: 55px;
     margin-bottom: 20px;
+    color: #2e7d4f;
+transition: transform 0.3s ease;
 }
-
+.upload-icon:hover {
+    transform: scale(1.1);
+}
 #plantImage {
     margin: 15px 0;
     padding: 10px;
@@ -127,10 +162,14 @@ header {
     color: white;
     font-size: 16px;
     cursor: pointer;
+    font-weight: 600;
+transition: all 0.3s ease;
 }
 
 #analyzeButton:hover {
     background: #245f3c;
+    transform: translateY(-2px);
+box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
 #imagePreview {
     display: none;
@@ -140,7 +179,8 @@ header {
     object-fit: cover;
     margin: 20px auto;
     border-radius: 12px;
-    border: 2px solid #2e7d4f;
+   border: 3px solid #d5e8da;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
 }
 
 /* RESULT PAGE */
@@ -198,8 +238,8 @@ header {
 
 .plant-info {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
 }
 
 .info-card {
@@ -208,18 +248,28 @@ header {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
+.info-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
 .info-card span {
     font-size: 30px;
 }
-
 .info-card h3 {
     margin: 12px 0 8px;
+    font-size: 19px;
+    color: #244b35;
+    font-weight: 600;
 }
 
 .info-card p {
     color: #5f6d63;
-    line-height: 1.5;
+    line-height: 1.7;
+    font-size: 15px;
 }
 
 .care-section,
@@ -227,28 +277,30 @@ header {
     background: white;
     margin-top: 30px;
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 18px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
-
 .care-section h2,
 .health-section h2 {
     margin-bottom: 20px;
+    font-size: 24px;
+    color: #244b35;
 }
 
 .care-section li {
     margin-bottom: 12px;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 .health-box {
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 15px;
     background: #f4f8f2;
 }
 
 .health-status {
     font-size: 20px;
+    font-weight: 600;
     margin-bottom: 12px;
 }
 
@@ -293,4 +345,24 @@ header {
     display: block;
     margin-top: 20px;
     font-weight: bold;
+}
+@media (max-width: 768px) {
+    .features {
+        padding: 30px 20px 60px;
+        gap: 20px;
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 350px;
+        box-sizing: border-box;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
 }
