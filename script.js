@@ -275,9 +275,7 @@ if (analyzeButton) {
             analyzeButton.textContent = "🔄 Analyzing...";
             analyzeButton.disabled = true;
 
-            const response = await fetch(
-                "http://localhost:5000/api/identify",
-                {
+            const response = await fetch("/api/identify", {
                     method: "POST",
                     body: formData
                 }
