@@ -519,7 +519,7 @@ if (distributionInfo) {
                 ? item.substring(0, 80) + "..."
                 : item;
         })
-        .join(", ");
+       .join("\n");
     } else {
         distributionInfo.textContent =
             "Information unavailable.";
